@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Fiel - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Amigo Fiel</h1>
+            <p class="subtitle">Sistema de Cadastro de Clientes e Pets</p>
+        </header>
+        
+        <div class="form-container">
+            <div id="message" class="message"></div>
+            
+            <form id="cadastroForm">
+                <div class="form-section">
+                    <h2 class="section-title">Dados do Dono</h2>
+                    
+                    <div class="form-group">
+                        <label for="nome_completo" class="required">Nome Completo</label>
+                        <input type="text" id="nome_completo" name="nome_completo" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cpf" class="required">CPF</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone" class="required">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="required">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="endereco" class="required">Endereço</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h2 class="section-title">Dados do Pet</h2>
+                    
+                    <div class="form-group">
+                        <label for="nome_pet" class="required">Nome do Pet</label>
+                        <input type="text" id="nome_pet" name="nome_pet" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="especie" class="required">Espécie</label>
+                            <select id="especie" name="especie" required>
+                                <option value="">Selecione</option>
+                                <option value="Cão">Cão</option>
+                                <option value="Gato">Gato</option>
+                                <option value="Pássaro">Pássaro</option>
+                                <option value="Roedor">Roedor</option>
+                                <option value="Réptil">Réptil</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="raca" class="required">Raça</label>
+                            <input type="text" id="raca" name="raca" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="data_nascimento" class="required">Data de Nascimento</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Informações adicionais como alergias, comportamento, etc."></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit">Cadastrar Cliente e Pet</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
